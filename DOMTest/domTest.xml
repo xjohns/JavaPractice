@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bookstore>
+      <book id = "1">
+           <name>书名</name>
+           <author>作者</author>
+           <year>2017</year>
+           <price>56</price>
+      </book>
+      <book id = "2">
+            <name>树名</name>
+            <year>2017</year>
+            <price>65</price>  
+            <language>中文</language> 
+      </book>
+</bookstore>
