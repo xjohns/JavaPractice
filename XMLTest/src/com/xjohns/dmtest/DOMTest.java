@@ -1,4 +1,4 @@
-package com.xjohns.dmtest.test;
+package com.xjohns.dmtest;
 
 import java.io.IOException;
 
@@ -23,7 +23,7 @@ public class DOMTest {
 			//创建DocumentBuilder对象
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			//通过DocumentBuilder的parse方法加载xml文件，并创建org.w3c.dom下的Document对象接收
-			Document doc = db.parse("domTest.xml");
+			Document doc = db.parse("XMLTest.xml");
 			//获取所有book节点的集合
 			NodeList bookList = doc.getElementsByTagName("book");
 			//通过NodeList的getLength方法可以获取bookList的长度
@@ -59,7 +59,7 @@ public class DOMTest {
 					//区分text类型的node和element类型的node
 					if (childNodes.item(k).getNodeType() == Node.ELEMENT_NODE){
 						//获取element类型的节点名
-						System.out.println("第" + (k + 1) + "个节点的节点名为" + childNodes.item(k).getNodeName());
+						System.out.print("第" + (k + 1) + "个节点的节点名为" + childNodes.item(k).getNodeName());
 						//获取element类型的节点值
 						System.out.println("--节点值为" + childNodes.item(k).getFirstChild().getNodeValue());
 						//也可以获取节点值，但是是返回文本内容，看情况使用
