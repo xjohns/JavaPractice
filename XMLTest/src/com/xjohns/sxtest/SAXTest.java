@@ -18,7 +18,7 @@ public class SAXTest {
 			SAXParser parser = factory.newSAXParser();
 			//创建一个SAXHandler对象实例
 			SAXHandler handler = new SAXHandler();
-			parser.parse("XMLTest.xml", handler);
+			parser.parse("src/res/XMLTest.xml", handler);
 		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

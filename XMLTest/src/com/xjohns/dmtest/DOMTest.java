@@ -23,7 +23,7 @@ public class DOMTest {
 			//创建DocumentBuilder对象
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			//通过DocumentBuilder的parse方法加载xml文件，并创建org.w3c.dom下的Document对象接收
-			Document doc = db.parse("XMLTest.xml");
+			Document doc = db.parse("src/res/XMLTest.xml");
 			//获取所有book节点的集合
 			NodeList bookList = doc.getElementsByTagName("book");
 			//通过NodeList的getLength方法可以获取bookList的长度
